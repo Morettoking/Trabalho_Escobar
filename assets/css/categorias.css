@@ -1,0 +1,102 @@
+/* Header + botão adicionar (já tinha) */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn.add {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn.add:hover {
+    background: #218838;
+}
+
+/* Botões de ação na tabela */
+.action-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    color: white !important;
+}
+
+.action-btn.edit {
+    background: #ffc107;
+}
+
+.action-btn.delete {
+    background: #dc3545;
+}
+
+.action-btn:hover {
+    opacity: 0.9;
+}
+
+/* Formulário de adicionar e editar */
+.category-form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.category-form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.category-form input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.category-form .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.category-form .save {
+    background: #28a745;
+    color: white;
+    border: none;
+}
+
+.category-form .save:hover {
+    background: #218838;
+}
+
+.category-form .cancel {
+    background: #6c757d;
+    color: white;
+}
+
+.category-form .cancel:hover {
+    background: #5a6268;
+}

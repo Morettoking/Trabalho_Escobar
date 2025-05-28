@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f8;
+    color: #333;
+}
+
+header {
+    background: #007bff;
+    padding: 15px 0;
+    color: white;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: opacity 0.3s;
+}
+
+header nav a:hover {
+    opacity: 0.8;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 30px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+
+.product-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-details {
+    flex: 1;
+    min-width: 300px;
+}
+
+.product-details h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.product-details .price {
+    font-size: 24px;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.product-details .description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.product-details .buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.product-details .btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.product-details .btn.add-cart {
+    background: #28a745;
+}
+
+.product-details .btn.back {
+    background: #6c757d;
+}
+
+.product-details .btn:hover {
+    background: #0056b3;
+}
+
+.product-details .btn.add-cart:hover {
+    background: #218838;
+}
+
+.product-details .btn.back:hover {
+    background: #5a6268;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 50px;
+}

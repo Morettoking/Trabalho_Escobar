@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+}
+
+.admin-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.sidebar {
+    background: #1f1f2e;
+    color: white;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.sidebar-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.sidebar-nav a:nth-child(1) { background: #007bff; }
+.sidebar-nav a:nth-child(2) { background: #17a2b8; }
+.sidebar-nav a:nth-child(3) { background: #28a745; }
+.sidebar-nav a:nth-child(4) { background: #ffc107; }
+.sidebar-nav a:nth-child(5) { background: #dc3545; }
+
+.sidebar-nav a:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.main-content {
+    flex: 1;
+    background: #f1f3f7;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.dashboard-header h1 {
+    margin: 0 0 30px;
+    font-size: 34px;
+    color: #007bff;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    flex: 1;
+    min-width: 220px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.card p {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #28a745;
+}
+
+.card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.last-sales h2 {
+    margin-top: 0;
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.last-sales table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.last-sales th, .last-sales td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.last-sales th {
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+}
+
+.last-sales tr:last-child td {
+    border-bottom: none;
+}
+
+.last-sales tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.last-sales a {
+    text-decoration: none;
+    color: #17a2b8;
+    font-weight: bold;
+}
+
+.last-sales a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,193 @@
+/* Header + botão adicionar */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn.add {
+    background: #28a745;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn.add:hover {
+    background: #218838;
+}
+
+/* Tabela de produtos */
+.product-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-table th,
+.product-table td {
+    padding: 8px 10px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+    vertical-align: middle;
+}
+
+.product-table th {
+    background: #007bff;
+    color: white;
+    font-size: 15px;
+}
+
+.product-table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.product-table tr:last-child td {
+    border-bottom: none;
+}
+
+.product-thumb {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.price {
+    text-align: right;
+    font-weight: 500;
+    color: #28a745;
+    font-size: 14px;
+}
+
+/* Botões de ação compactos */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.action-btn {
+    padding: 6px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: background 0.3s;
+    color: white !important;
+}
+
+.action-btn.edit {
+    background: #ffc107;
+}
+
+.action-btn.delete {
+    background: #dc3545;
+}
+
+.action-btn:hover {
+    opacity: 0.9;
+}
+/* Coluna Ações */
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* ✅ alinha verticalmente */
+    gap: 6px;             /* ✅ espaçamento uniforme entre os botões */
+    min-width: 110px;     /* ✅ largura mínima para evitar colapsar */
+}
+
+.action-btn {
+    padding: 6px 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;          /* ✅ flex garante alinhamento interno */
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: background 0.3s;
+    color: white !important;
+    width: 36px;            /* ✅ largura fixa para todos os botões */
+    height: 36px;           /* ✅ altura fixa para todos os botões */
+}
+
+.action-btn.edit {
+    background: #ffc107;
+}
+
+.action-btn.delete {
+    background: #dc3545;
+}
+
+.action-btn:hover {
+    opacity: 0.9;
+}
+/* Formulário de adicionar/editar produto */
+.product-form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.product-form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.product-form input,
+.product-form select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product-form .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.product-form .save {
+    background: #28a745;
+    color: white;
+    border: none;
+}
+
+.product-form .save:hover {
+    background: #218838;
+}
+
+.product-form .cancel {
+    background: #6c757d;
+    color: white;
+}
+
+.product-form .cancel:hover {
+    background: #5a6268;
+}
